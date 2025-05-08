@@ -37,7 +37,7 @@ export class SupportService {
   public async getMySupports(userId: number): Promise<Support[]> {
     return this.prisma.support.findMany({
       where: {
-        user_id: userId,
+        userId: userId,
       },
       include: {
         user: true,
@@ -53,7 +53,7 @@ export class SupportService {
 
     const createSupport = this.prisma.support.create({
       data: {
-        user_id: user.id,
+        userId: user.id,
         title: dto.title,
         message: dto.message,
       },
