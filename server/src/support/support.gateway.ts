@@ -81,7 +81,7 @@ export class SupportGateway
   async answerSupport(@MessageBody() dto: AnswerSupportDto) {
     const support = await this.supportService.answerMessage(dto);
 
-    this.server.to(`user_${support.user_id}`).emit(`supportAnswered`, support);
+    this.server.to(`user_${support.userId}`).emit(`supportAnswered`, support);
   }
 
   @SubscribeMessage('getAllSupports')
@@ -98,5 +98,12 @@ export class SupportGateway
       const mySupports = await this.supportService.getMySupports(userId);
       client.emit('mySupports', mySupports);
     }
+  }
+
+  @SubscribeMessage('delete')
+  async deleteSupport(@MessageBody('id') id: number) {
+    const support = await this.supportService.deleteMessage(id);
+
+    this.server.to(`user_${support.userId}`).emit('deleteSupport', support);
   }
 }

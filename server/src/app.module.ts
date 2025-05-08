@@ -4,8 +4,10 @@ import { AuthModule } from './auth/auth.module';
 import { RoleModule } from './role/role.module';
 import { UserModule } from './user/user.module';
 import { SupportModule } from './support/support.module';
+import { CategoryModule } from './category/category.module';
+import { DepartmentModule } from './department/department.module';
 
 @Module({
-  imports: [ConfigModule.forRoot(), AuthModule, UserModule, RoleModule, SupportModule],
+  imports: [ConfigModule.forRoot(), AuthModule, UserModule, RoleModule, SupportModule, CategoryModule, DepartmentModule],
 })
 export class AppModule {}
