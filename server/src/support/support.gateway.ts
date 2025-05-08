@@ -99,4 +99,11 @@ export class SupportGateway
       client.emit('mySupports', mySupports);
     }
   }
+
+  @SubscribeMessage('delete')
+  async deleteSupport(@MessageBody('id') id: number) {
+    const support = await this.supportService.deleteMessage(id);
+
+    this.server.to(`user_${support.user_id}`).emit('deleteSupport', support);
+  }
 }
