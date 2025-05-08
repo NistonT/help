@@ -15,11 +15,11 @@ model Support {
   CreatedAt DateTime @default(now()) @map("created_at")
   UpdatedAt DateTime @updatedAt() @map("updated_at")
 
-  user    User   @relation(fields: [user_id], references: [id])
+  user    User    @relation(fields: [user_id], references: [id])
   user_id Int
   title   String
   message String
-  admin   String
+  admin   String?
 
   @@map("support")
 }

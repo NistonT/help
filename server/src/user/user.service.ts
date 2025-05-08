@@ -52,7 +52,7 @@ export class UserService {
   }
 
   public async getById(id: number) {
-    return this.prisma.user.findUnique({
+    const userId = this.prisma.user.findUnique({
       where: {
         id,
       },
@@ -60,6 +60,8 @@ export class UserService {
         role: true,
       },
     });
+
+    return userId;
   }
 
   public async getByEmail(email: string) {
