@@ -1,6 +1,7 @@
 # 🎓 Демо Экзамен
 
 Он состоит из двух частей:
+
 - **Сервер** на [NestJS](https://nestjs.com/)
 - **Клиент** на [Next.js](https://nextjs.org/)
 
@@ -10,36 +11,36 @@
 
 ### 🚀 Сервер (NestJS)
 
-| Технология     | Версия / Назначение |
-|----------------|---------------------|
+| Технология                                                                                   | Назначение            |
+| -------------------------------------------------------------------------------------------- | --------------------- |
 | <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" /> | Язык программирования |
-| <img src="https://img.shields.io/badge/NodeJs-5FA04E?logo=nodedotjs&logoColor=white" /> | Backend runtime |
-| <img src="https://img.shields.io/badge/NestJs-black?logo=nestjs&logoColor=E0234E" /> | Фреймворк для Node.js |
-| <img src="https://img.shields.io/badge/Prisma ORM-white?logo=prisma&logoColor=2D3748" /> | ORM для работы с базой данных |
-| <img src="https://img.shields.io/badge/SQLite-white?logo=sqlite&logoColor=003B57" /> | Локальная база данных |
-
----
+| <img src="https://img.shields.io/badge/NodeJs-5FA04E?logo=nodedotjs&logoColor=white" />      | Backend runtime       |
+| <img src="https://img.shields.io/badge/NestJs-black?logo=nestjs&logoColor=E0234E" />         | Фреймворк для Node.js |
+| <img src="https://img.shields.io/badge/Prisma ORM-white?logo=prisma&logoColor=2D3748" />     | ORM для работы с БД   |
+| <img src="https://img.shields.io/badge/SQLite-white?logo=sqlite&logoColor=003B57" />         | Локальная база данных |
+| <img src="https://img.shields.io/badge/Socket.io-010101?logo=socket.io&logoColor=white" />   | WebSocket реализация  |
 
 ### 🌐 Клиент (Next.js)
 
-| Технология     | Версия / Назначение |
-|----------------|---------------------|
-| <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" /> | Язык программирования |
-| <img src="https://img.shields.io/badge/NextJs-white?logo=nextdotjs&logoColor=000000" /> | Фреймворк для React |
-| <img src="https://img.shields.io/badge/React Query-white?logo=reactquery&logoColor=FF4154" /> | Управление состоянием |
-| <img src="https://img.shields.io/badge/React Hook Form-EC5990?logo=reacthookform&logoColor=white" /> | Валидация форм |
-| <img src="https://img.shields.io/badge/Tailwind v4-06B6D4?logo=tailwindcss&logoColor=white" /> | CSS-фреймворк |
-| <img src="https://img.shields.io/badge/Sonner-black?logo=sonner&logoColor=white" /> | Уведомления |
-| <img src="https://img.shields.io/badge/Js Cookie-F7DF1E?logo=jscookie&logoColor=F7DF1E" /> | Работа с cookies |
+| Технология                                                                                           | Версия / Назначение   |
+| ---------------------------------------------------------------------------------------------------- | --------------------- |
+| <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" />         | Язык программирования |
+| <img src="https://img.shields.io/badge/NextJs-white?logo=nextdotjs&logoColor=000000" />              | Фреймворк для React   |
+| <img src="https://img.shields.io/badge/React Query-white?logo=reactquery&logoColor=FF4154" />        | Управление состоянием |
+| <img src="https://img.shields.io/badge/React Hook Form-EC5990?logo=reacthookform&logoColor=white" /> | Валидация форм        |
+| <img src="https://img.shields.io/badge/Tailwind v4-06B6D4?logo=tailwindcss&logoColor=white" />       | CSS-фреймворк         |
+| <img src="https://img.shields.io/badge/Sonner-black?logo=sonner&logoColor=white" />                  | Уведомления           |
+| <img src="https://img.shields.io/badge/Js Cookie-F7DF1E?logo=jscookie&logoColor=F7DF1E" />           | Работа с cookies      |
 
 ---
 
-## 🧰 Дополнительные инструменты
+## 🧰 Инструменты разработки
 
-| Инструмент      | Назначение |
-|----------------|------------|
-| <img src="https://img.shields.io/badge/VS code-blue?logo=visualstudiocode&logoColor=white" /> | IDE |
-| <img src="https://img.shields.io/badge/Insomnia-4000BF?logo=insomnia&logoColor=white" /> | API тестирование |
+| Инструмент                                                                                    | Назначение             |
+| --------------------------------------------------------------------------------------------- | ---------------------- |
+| <img src="https://img.shields.io/badge/VS code-blue?logo=visualstudiocode&logoColor=white" /> | Основная IDE           |
+| <img src="https://img.shields.io/badge/Insomnia-4000BF?logo=insomnia&logoColor=white" />      | Тестирование REST API  |
+| <img src="https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white" />        | Тестирование WebSocket |
 
 ---
 
@@ -76,6 +77,8 @@ npm run start:dev
 ```
 
 адрес сервера: http://localhost:5555
+
+адрес веб-сокета: ws://localhost:5555
 
 ## 2.2. Запуск клиента
 
