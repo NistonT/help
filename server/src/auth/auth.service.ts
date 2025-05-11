@@ -59,7 +59,7 @@ export class AuthService {
   }
 
   // Полученние нового токена
-  async getNewTokens(refreshToken: string) {
+  public async getNewTokens(refreshToken: string) {
     const result = await this.jwt.verifyAsync(refreshToken);
     if (!result) throw new UnauthorizedException('Токен не валидный');
 
@@ -74,7 +74,7 @@ export class AuthService {
   }
 
   // Добавление Refresh токен
-  addRefreshTokenToResponse(res: Response, refreshToken: string) {
+  public addRefreshTokenToResponse(res: Response, refreshToken: string) {
     const expiresIn = new Date();
     expiresIn.setDate(expiresIn.getDate() + this.EXPIRE_DAY_REFRESH_TOKEN);
 
@@ -88,7 +88,7 @@ export class AuthService {
   }
 
   // Удаление Refresh токена
-  removeRefreshTokenToResponse(res: Response) {
+  public removeRefreshTokenToResponse(res: Response) {
     res.cookie(this.REFRESH_TOKEN_NAME, '', {
       httpOnly: true,
       domain: process.env.DOMAIN,

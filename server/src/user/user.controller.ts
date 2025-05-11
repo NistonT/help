@@ -24,6 +24,8 @@ export class UserController {
     return await this.userService.getById(id);
   }
 
+  // Обновление пользователя:
+  // Put localhost:5555/api/user
   @Put()
   @Auth()
   public async update(
@@ -33,6 +35,8 @@ export class UserController {
     return await this.userService.update(dto, id);
   }
 
+  // Получение определенного пользователя по url:
+  // GET localhost:5555/api/user/login
   @Get('/login')
   @Auth()
   public async getByLogin(@CurrentUser('login') login: string): Promise<User> {

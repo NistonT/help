@@ -9,6 +9,7 @@ import { UpdateUserDto } from './dto/update.dto';
 export class UserService {
   constructor(private prisma: PrismaService) {}
 
+  // Создание пользователя
   public async create(dto: RegisterUser): Promise<User> {
     return await this.prisma.user.create({
       data: {
@@ -27,6 +28,7 @@ export class UserService {
     });
   }
 
+  // Обновление пользователя
   public async update(dto: UpdateUserDto, id: number): Promise<User> {
     const user = await this.getById(id);
 
@@ -51,10 +53,12 @@ export class UserService {
     });
   }
 
+  // Вывод всех пользователей
   public async getByAll(): Promise<User[]> {
     return await this.prisma.user.findMany();
   }
 
+  // Поиск пользователя по идентификатору
   public async getById(id: number) {
     const userId = this.prisma.user.findUnique({
       where: {
@@ -69,7 +73,8 @@ export class UserService {
     return userId;
   }
 
-  public async getByEmail(email: string) {
+  // Поиск пользователя по почте
+  public async getByEmail(email: string): Promise<User> {
     return this.prisma.user.findUnique({
       where: {
         email,
@@ -81,7 +86,8 @@ export class UserService {
     });
   }
 
-  public async getByLogin(login: string) {
+  // Поиск пользователя по логину
+  public async getByLogin(login: string): Promise<User> {
     return this.prisma.user.findUnique({
       where: {
         login,
