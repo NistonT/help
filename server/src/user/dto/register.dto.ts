@@ -1,4 +1,4 @@
-import { IsString } from 'class-validator';
+import { IsNumber, IsString } from 'class-validator';
 
 export class RegisterUser {
   @IsString()
@@ -15,4 +15,7 @@ export class RegisterUser {
 
   @IsString()
   email: string;
+
+  @IsNumber()
+  id_department: number;
 }

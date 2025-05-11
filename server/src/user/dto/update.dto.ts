@@ -20,4 +20,8 @@ export class UpdateUserDto {
   @IsOptional()
   @IsNumber()
   roleId?: number;
+
+  @IsOptional()
+  @IsNumber()
+  id_department?: number;
 }

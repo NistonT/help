@@ -37,7 +37,7 @@ export class DepartmentService {
   public async getId(id: number): Promise<Department> {
     const getIdDepartment = await this.prisma.department.findUnique({
       where: {
-        id,
+        id: Number(id),
       },
       include: {
         User: true,
@@ -54,7 +54,7 @@ export class DepartmentService {
   ): Promise<Department> {
     const updateDepartment = await this.prisma.department.update({
       where: {
-        id,
+        id: Number(id),
       },
       data: {
         name: dto.name,

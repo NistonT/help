@@ -18,9 +18,11 @@ export class UserService {
         number: dto.number,
         login: dto.login,
         roleId: 1,
+        departmentId: dto.id_department,
       },
       include: {
         role: true,
+        department: true,
       },
     });
   }
@@ -40,9 +42,11 @@ export class UserService {
         email: dto.email,
         number: dto.number,
         roleId: dto.roleId,
+        departmentId: dto.id_department,
       },
       include: {
         role: true,
+        department: true,
       },
     });
   }
@@ -58,6 +62,7 @@ export class UserService {
       },
       include: {
         role: true,
+        department: true,
       },
     });
 
@@ -71,6 +76,7 @@ export class UserService {
       },
       include: {
         role: true,
+        department: true,
       },
     });
   }
@@ -82,6 +88,7 @@ export class UserService {
       },
       include: {
         role: true,
+        department: true,
       },
     });
   }

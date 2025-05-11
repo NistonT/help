@@ -29,7 +29,7 @@ export class CategoryService {
   public async delete(id: number): Promise<Category> {
     const deleteCategory = await this.prisma.category.delete({
       where: {
-        id,
+        id: Number(id),
       },
     });
 
