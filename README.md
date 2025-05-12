@@ -26,11 +26,15 @@
 | ---------------------------------------------------------------------------------------------------- | --------------------- |
 | <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" />         | Язык программирования |
 | <img src="https://img.shields.io/badge/NextJs-white?logo=nextdotjs&logoColor=000000" />              | Фреймворк для React   |
-| <img src="https://img.shields.io/badge/React Query-white?logo=reactquery&logoColor=FF4154" />        | Управление состоянием |
-| <img src="https://img.shields.io/badge/React Hook Form-EC5990?logo=reacthookform&logoColor=white" /> | Валидация форм        |
-| <img src="https://img.shields.io/badge/Tailwind v4-06B6D4?logo=tailwindcss&logoColor=white" />       | CSS-фреймворк         |
+| <img src="https://img.shields.io/badge/React_Query-white?logo=reactquery&logoColor=FF4154" />        | Управление состоянием |
+| <img src="https://img.shields.io/badge/React_Hook_Form-EC5990?logo=reacthookform&logoColor=white" /> | Валидация форм        |
+| <img src="https://img.shields.io/badge/Tailwind_v4-06B6D4?logo=tailwindcss&logoColor=white" />       | CSS-фреймворк         |
 | <img src="https://img.shields.io/badge/Sonner-black?logo=sonner&logoColor=white" />                  | Уведомления           |
-| <img src="https://img.shields.io/badge/Js Cookie-F7DF1E?logo=jscookie&logoColor=F7DF1E" />           | Работа с cookies      |
+| <img src="https://img.shields.io/badge/Js_Cookie-F7DF1E?logo=jscookie&logoColor=F7DF1E" />           | Работа с cookies      |
+| <img src="https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white" />                   | HTTP-клиент           |
+| <img src="https://img.shields.io/badge/Lucide_React-000000?logo=lucide&logoColor=white" />           | Иконки                |
+| <img src="https://img.shields.io/badge/Motion-0055FF?logo=framer&logoColor=white" />                 | Анимации              |
+| <img src="https://img.shields.io/badge/Zustand-000000?logo=zustand&logoColor=white" />               | Управление состоянием |
 
 ---
 
