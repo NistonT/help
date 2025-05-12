@@ -6,6 +6,6 @@ export const metadata: Metadata = {
 	...NO_INDEX_PAGE,
 };
 
-export function TaskPage() {
+export default function TaskPage() {
 	return <>Task</>;
 }
