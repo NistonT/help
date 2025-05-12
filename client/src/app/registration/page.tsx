@@ -6,6 +6,6 @@ export const metadata: Metadata = {
 	...NO_INDEX_PAGE,
 };
 
-export function RegistrationPage() {
+export default function RegistrationPage() {
 	return <>регистрация</>;
 }

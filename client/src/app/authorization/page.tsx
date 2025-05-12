@@ -6,6 +6,6 @@ export const metadata: Metadata = {
 	...NO_INDEX_PAGE,
 };
 
-export function AuthorizationPage() {
+export default function AuthorizationPage() {
 	return <>Авторизация</>;
 }

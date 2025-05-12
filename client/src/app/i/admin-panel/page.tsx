@@ -6,6 +6,6 @@ export const metadata: Metadata = {
 	...NO_INDEX_PAGE,
 };
 
-export function AdminPanelPage() {
+export default function AdminPanelPage() {
 	return <>Admin panel</>;
 }
