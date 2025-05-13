@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SITE_NAME } from "@/constants/seo.constants";
 import type { Metadata } from "next";
@@ -37,6 +38,8 @@ export default function RootLayout({
 				<Providers>
 					<Header />
 					<section>{children}</section>
+					<Footer />
+
 					<Toaster theme='light' position='top-center' duration={1500} />
 				</Providers>
 			</body>
